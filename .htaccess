@@ -1,0 +1,2 @@
+RewriteEngine On
+ErrorDocument 404 /PHP_p4/front-end-website-examen/404.html
