@@ -16,23 +16,62 @@
             <li><a href="project.html">Project</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <img class="burger" src="./assets/menu-burger.svg" alt="menu">
+        <img class="burger" id="burger" src="./assets/menu-burger.svg" alt="menu" onclick="openPannel()">
     </nav>
 
-    <h1 class="skills-title">Skills</h1>
+    <section class="menu-section" id="pannel">
+        <img src="./assets/close.png" alt="close button" class="close" onclick="closePannel()">
+        <section class="button-burger">
+            <a class="link-btn" href="home.html"><button class="btn-burger">Home</button></a>
+            <a class="link-btn" href="skills.html"><button class="btn-burger" id="active-phone">Skills</button></a>
+            <a class="link-btn" href="project.html"><button class="btn-burger">Project</button></a>
+            <a class="link-btn" href="contact.html"><button class="btn-burger">Contact</button></a>
+        </section>
+    </section>
+
+    <h1 class="skills-title">Skills</h1> <br>
 
     <article class="article-skills">
-        <h3 class="skills-list">HTML <span class="skills-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span> </h3>
-        <h3 class="skills-list">CSS <span class="skills-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span> </h3>
-        <h3 class="skills-list">JavaScript <span class="skills-stars">&#9733; &#9733; &#9733;</span> </h3>
-        <h3 class="skills-list">PHP <span class="skills-stars">&#9733; &#9733; &#9733;</span> </h3>
-        <h3 class="skills-list">SQL <span class="skills-stars">&#9733; &#9733; &#9733;</span> </h3>
-        <h3 class="skills-list">JavaScript <span class="skills-stars">&#9733; &#9733;</span> </h3>
+        <p class="a-s">Ik studeer Software Developer bij Techniek College Rotterdam.</p>
+        <p class="a-s">Mijn werkervaring: Ik ben nu bij WAW burger aan het werken maar ik heb all eerder stage gelopen bij TV Direct in Curacao</p>
+        <br>
+        <table class="skill-border">
+            <tr class="skills-border">
+                <th class="skills-list sl">Programeer Talen</th>
+                <th class="skills-list">Rating</th>
+            </tr>
+            <tr class="skills-border">
+                <td class="skills-list">HTML5</td>
+                <td class="skills-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+            <tr class="skills-border">
+                <td class="skills-list">CSS3</td>
+                <td class="skills-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+            <tr class="skills-border">
+                <td class="skills-list">JavaScript</td>
+                <td class="skills-stars">&#9733; &#9733; &#9733;</td>
+            </tr>
+            <tr class="skills-border">
+                <td class="skills-list">PHP</td>
+                <td class="skills-stars">&#9733; &#9733; &#9733;</td>
+            </tr>
+            <tr class="skills-border">
+                <td class="skills-list">SQL</td>
+                <td class="skills-stars">&#9733; &#9733; &#9733;</td>
+            </tr>
+            <tr class="skills-border">
+                <td class="skills-list">SASS</td>
+                <td class="skills-stars">&#9733; &#9733; &#9733;</td>
+            </tr>
+        </table>
     </article>
 
     <footer class="footer-skills">
-        <p>Dit is de Website van Jandro Thielman en gemaakt door Jandro Thielman.</p>
+        <p class="footer-text">Dit is de Website van Jandro Thielman en gemaakt door Jandro Thielman.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
